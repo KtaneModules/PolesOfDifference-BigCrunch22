@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using KModkit;
+using System.Text.RegularExpressions;
 
 public class TheSimpletonScript : MonoBehaviour
 {
@@ -27,8 +28,12 @@ public class TheSimpletonScript : MonoBehaviour
 		moduleId = moduleIdCounter++;
 		Button.OnInteract += delegate () {Pressed(); return false; };
 		Button.OnInteractEnded += delegate () {Unpressed();};
-		Debug.LogFormat("[The Simpleton #{0}] Push the button!", moduleId);
 	}
+
+    void Start()
+    {
+        Debug.LogFormat("[The Simpleton #{0}] Push the button!", moduleId);
+    }
 	
 	void Pressed()
 	{
@@ -36,7 +41,7 @@ public class TheSimpletonScript : MonoBehaviour
 		{
 			Once = 1;
 		}
-		Button.AddInteractionPunch(0.2f);
+		Button.AddInteractionPunch();
 		Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.BigButtonPress, transform);
 	}
 	
@@ -52,4 +57,27 @@ public class TheSimpletonScript : MonoBehaviour
 			Debug.LogFormat("[The Simpleton #{0}] You pushed the button. Good job!", moduleId);
 		}
 	}
+
+    //twitch plays
+    #pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"!{0} push [Pushes the button]";
+    #pragma warning restore 414
+    IEnumerator ProcessTwitchCommand(string command)
+    {
+        if (Regex.IsMatch(command, @"^\s*push\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
+        {
+            yield return null;
+            Button.OnInteract();
+            yield return new WaitForSeconds(0.1f);
+            Button.OnInteractEnded();
+            yield break;
+        }
+    }
+
+    IEnumerator TwitchHandleForcedSolve()
+    {
+        Button.OnInteract();
+        yield return new WaitForSeconds(0.1f);
+        Button.OnInteractEnded();
+    }
 }
