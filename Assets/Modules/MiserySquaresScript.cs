@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using KModkit;
 
@@ -1032,8 +1033,11 @@ public class MiserySquaresScript : MonoBehaviour
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 	};
-	
-	private int Layering = 1;
+
+    private string[] lognames = { "Black", "Red", "Green", "Blue", "Yellow", "Magenta", "Cyan", "White", "Orange", "Brown", "Gray", "Purple", "Indigo", "Teal", "Lime", "Opal", "Olive", "Moonstone", "Menthol", "Peru", "Phlox", "Pistachio", "Rackley", "Quincy", "Rust", "Sapphire", "Tulip", "Tomato", "Toolbox", "Water", "Wine", "Watermelon", "Zinnwaldite", "Iceberg", "Ultramarine", "Tan", "Shampoo", "Salem", "Ruby", "Pear", "Oxley", "Lanzones", "Kobi", "Garnet", "Azure", "Bisque", "Artichoke", "Amber" };
+    private string[] shortnames = { "Bl", "R", "G", "B", "Y", "M", "C", "W", "O", "Br", "Gr", "P", "I", "Te", "L", "Op", "Ol", "Mn", "Mt", "Pr", "Px", "Pt", "Ra", "Q", "Rt", "S", "Tu", "To", "Tb", "Wa", "Wi", "Wt", "Z", "Ic", "U", "Tn", "Sh", "Sa", "Ru", "Pe", "Ox", "Lz", "K", "Gn", "Az", "Bi", "Ar", "Am" };
+
+    private int Layering = 1;
 	private int Squaring = 0;
 	private bool Guided = false;
 	
@@ -1045,7 +1049,7 @@ public class MiserySquaresScript : MonoBehaviour
 	void Awake()
 	{
 		moduleId = moduleIdCounter++;
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 5; i++)
 		{
 			int index = i;
 			TheBestSquares[index].OnInteract += delegate
@@ -1209,7 +1213,7 @@ public class MiserySquaresScript : MonoBehaviour
 			Null = "North West";
 		}
 		
-		Debug.LogFormat(Answer[0].ToString());
+		/**Debug.LogFormat(Answer[0].ToString());
 		Debug.LogFormat(Answer[1].ToString());
 		Debug.LogFormat(Answer[2].ToString());
 		Debug.LogFormat(Answer[3].ToString());
@@ -1218,11 +1222,25 @@ public class MiserySquaresScript : MonoBehaviour
 		Debug.LogFormat(Answer[6].ToString());
 		Debug.LogFormat(Answer[7].ToString());
 		Debug.LogFormat(Answer[8].ToString());
-		Debug.LogFormat(Answer[9].ToString());
+		Debug.LogFormat(Answer[9].ToString());*/
 		
 		Debug.LogFormat("[Misery Squares #{0}] The starting pixel of the sequence is in Column {1}, Row {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
 		Debug.LogFormat("[Misery Squares #{0}] The movement of the sequence from the starting pixel is: {1}", moduleId, Null);
-	}
+
+        string logans = "";
+        for (int i = 0; i < 10; i++)
+        {
+            if (i != 9)
+            {
+                logans += lognames[Answer[i]]+" ";
+            }
+            else
+            {
+                logans += lognames[Answer[i]];
+            }
+        }
+        Debug.LogFormat("[Misery Squares #{0}] The correct continuation sequence of colors is {1}", moduleId, logans);
+    }
 	
 	void CheckDwelling()
 	{
@@ -1237,7 +1255,7 @@ public class MiserySquaresScript : MonoBehaviour
 		TheBestSquares[index].AddInteractionPunch(0.2f);
 		if (index == 0)
 		{
-			Audio.PlaySoundAtTransform(SFX[1].name, transform);
+			Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
 			Squaring = (Squaring + 1) % 10;
 			Mocking[0].text = (Squaring + 1).ToString();
 			if (Guided == true)
@@ -1250,14 +1268,14 @@ public class MiserySquaresScript : MonoBehaviour
 		{
 			if (Layering == 1)
 			{
-				Audio.PlaySoundAtTransform(SFX[1].name, transform);
+				Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
 				Corporeal[1][Squaring] = (Corporeal[1][Squaring] + 1) % 48;
 				CheckDwelling();
 			}
 			
 			else
 			{
-				Audio.PlaySoundAtTransform(SFX[2].name, transform);
+				Audio.PlaySoundAtTransform(SFX[2].name, TheBestSquares[index].transform);
 			}
 			
 			if (Guided == true)
@@ -1270,7 +1288,7 @@ public class MiserySquaresScript : MonoBehaviour
 		{
 			if (Guided == true)
 			{
-				Audio.PlaySoundAtTransform(SFX[1].name, transform);
+				Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
 				Layering = (Layering + 1) % 2;
 				if (Layering == 0)
 				{
@@ -1294,28 +1312,15 @@ public class MiserySquaresScript : MonoBehaviour
 			
 			else
 			{
-				Audio.PlaySoundAtTransform(SFX[2].name, transform);
+				Audio.PlaySoundAtTransform(SFX[2].name, TheBestSquares[index].transform);
 			}
 		}
 		
-		else if (index == 3)
+		if (index == 3)
 		{
 			if (Guided == false)
 			{
-				Audio.PlaySoundAtTransform(SFX[2].name, transform);
-			}
-			
-			else
-			{
-				Audio.PlaySoundAtTransform(SFX[1].name, transform);
-			}
-		}
-		
-		if (index == 4)
-		{
-			if (Guided == false)
-			{
-				Audio.PlaySoundAtTransform(SFX[0].name, transform);
+				Audio.PlaySoundAtTransform(SFX[0].name, TheBestSquares[index].transform);
 				Mocking[1].text = "Enabled";
 				Mocking[1].color = Color.green;
 				Activity[0].SetActive(false);
@@ -1327,9 +1332,22 @@ public class MiserySquaresScript : MonoBehaviour
 			}
 		}
 		
-		if (index == 5)
+		if (index == 4)
 		{
-			if (Corporeal[1][0] == Answer[0] && Corporeal[1][1] == Answer[1] && Corporeal[1][2] == Answer[2] && Corporeal[1][3] == Answer[3] && Corporeal[1][4] == Answer[4] && Corporeal[1][5] == Answer[5] && Corporeal[1][6] == Answer[6] && Corporeal[1][7] == Answer[7] && Corporeal[1][8] == Answer[8] && Corporeal[1][9] == Answer[9])
+            string logans = "";
+            for (int i = 0; i < 10; i++)
+            {
+                if (i != 9)
+                {
+                    logans += lognames[Corporeal[1][i]] + " ";
+                }
+                else
+                {
+                    logans += lognames[Corporeal[1][i]];
+                }
+            }
+            Debug.LogFormat("[Misery Squares #{0}] You submitted a color sequence of {1}", moduleId, logans);
+            if (Corporeal[1][0] == Answer[0] && Corporeal[1][1] == Answer[1] && Corporeal[1][2] == Answer[2] && Corporeal[1][3] == Answer[3] && Corporeal[1][4] == Answer[4] && Corporeal[1][5] == Answer[5] && Corporeal[1][6] == Answer[6] && Corporeal[1][7] == Answer[7] && Corporeal[1][8] == Answer[8] && Corporeal[1][9] == Answer[9])
 			{
 				StartCoroutine(CorrectAnswer());
 			}
@@ -1343,7 +1361,7 @@ public class MiserySquaresScript : MonoBehaviour
 	
 	void Specks()
 	{
-		
+
 		if (Corporeal[Layering][Squaring] == 0)
 		{
 			Mocking[3].text = "Bl";
@@ -1583,16 +1601,17 @@ public class MiserySquaresScript : MonoBehaviour
 		{
 			Mocking[3].text = "Am";
 		}
+
 	}
 
 	IEnumerator CorrectAnswer()
 	{
 		Mocking[4].text = "NICE";
-		for(int k = 0; k < 15; k++)
+		for(int k = 0; k < 14; k++)
 		{
-			Activity[k].SetActive(false);
+            Activity[k].SetActive(false);
 		}
-		Audio.PlaySoundAtTransform(SFX[3].name, transform);
+		Audio.PlaySoundAtTransform(SFX[3].name, TheBestSquares[4].transform);
 		for(int q = 0; q < 10; q++)
 		{
 				TheIndexOfSquares[q].material = TheIndexOfColors[2];
@@ -1600,20 +1619,20 @@ public class MiserySquaresScript : MonoBehaviour
 				yield return new WaitForSecondsRealtime(0.47f);
 		}
 		Module.HandlePass();
-		Activity[16].SetActive(true); Activity[17].SetActive(true); Activity[18].SetActive(true); Activity[19].SetActive(true);
+		Activity[15].SetActive(true); Activity[16].SetActive(true); Activity[17].SetActive(true); Activity[18].SetActive(true);
 		Mocking[6].text = "GG";
-		Debug.LogFormat("[Misery Squares #{0}] You solved the module. Impressive!", moduleId);
+		Debug.LogFormat("[Misery Squares #{0}] Correct sequence! You solved the module. Impressive!", moduleId);
 	}
 	
 	IEnumerator WrongAnswer()
 	{
-		Debug.LogFormat("[Misery Squares #{0}] Incorrect answer.", moduleId);
+		Debug.LogFormat("[Misery Squares #{0}] Incorrect sequence! Strike! Module resetting...", moduleId);
 		Mocking[4].text = "RESET";
-		for(int k = 0; k < 15; k++)
+		for(int k = 0; k < 14; k++)
 		{
-			Activity[k].SetActive(false);
+            Activity[k].SetActive(false);
 		}
-		Audio.PlaySoundAtTransform(SFX[4].name, transform);
+		Audio.PlaySoundAtTransform(SFX[4].name, TheBestSquares[4].transform);
 		for(int q = 0; q < 11; q++)
 		{
 			if (q < 10)
@@ -1635,7 +1654,7 @@ public class MiserySquaresScript : MonoBehaviour
 		Mocking[4].text = "SUBMIT";
 		Activity[0].SetActive(true); Activity[1].SetActive(true); Activity[2].SetActive(true); Activity[3].SetActive(true); Activity[5].SetActive(true); Activity[6].SetActive(true);
 		Activity[7].SetActive(true); Activity[8].SetActive(true); Activity[9].SetActive(true); Activity[10].SetActive(true); Activity[11].SetActive(true);
-		Activity[12].SetActive(true); Activity[13].SetActive(true); Activity[14].SetActive(true);
+		Activity[12].SetActive(true); Activity[13].SetActive(true);
 		Mocking[3].text = "";
 		Mocking[2].text = "";
 		Guided = false;
@@ -1646,4 +1665,191 @@ public class MiserySquaresScript : MonoBehaviour
 		Mocking[0].text = "1";
 		CorporealLadder();
 	}
+
+    //twitch plays
+    #pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"!{0} setsquare <#> <col> [Sets square '#' in the bottom row to the color 'col'] | !{0} submit [Submits the current bottom color sequence] | !{0} colorblind (#) [Enables colorblind mode (Optionally briefly displays the color of the '#' square in the top row)] | Valid squares are 1-10, valid colors are in the manual (color guide abbreviations may be used)";
+    #pragma warning restore 414
+    IEnumerator ProcessTwitchCommand(string command)
+    {
+        if (Regex.IsMatch(command, @"^\s*submit\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
+        {
+            yield return null;
+            if (Mocking[4].text.Equals("RESET"))
+            {
+                yield return "sendtochaterror Cannot submit while the module is resetting!";
+                yield break;
+            }
+            TheBestSquares[4].OnInteract();
+            yield break;
+        }
+        string[] parameters = command.Split(' ');
+        if (Regex.IsMatch(parameters[0], @"^\s*colorblind\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
+        {
+            yield return null;
+            if (Mocking[4].text.Equals("RESET"))
+            {
+                yield return "sendtochaterror Cannot perform the colorblind command while the module is resetting!";
+                yield break;
+            }
+            if (parameters.Length == 2)
+            {
+                int temp = 0;
+                bool check = int.TryParse(parameters[1], out temp);
+                if (!check)
+                {
+                    yield return "sendtochaterror The specified square '" + parameters[1] + "' is invalid!";
+                    yield break;
+                }
+                else if (temp < 1 || temp > 10)
+                {
+                    yield return "sendtochaterror The specified square '" + parameters[1] + "' is not in the range 1-10!";
+                    yield break;
+                }
+                if (!Guided)
+                {
+                    TheBestSquares[3].OnInteract();
+                    yield return new WaitForSeconds(0.1f);
+                }
+                if (Layering != 0)
+                {
+                    TheBestSquares[2].OnInteract();
+                    yield return new WaitForSeconds(0.1f);
+                }
+                while ((Squaring+1) != temp)
+                {
+                    TheBestSquares[0].OnInteract();
+                    yield return new WaitForSeconds(0.1f);
+                }
+                yield return new WaitForSeconds(2f);
+                TheBestSquares[2].OnInteract();
+            }
+            else if (parameters.Length > 2)
+            {
+                yield return "sendtochaterror Too many parameters!";
+            }
+            else if (parameters.Length == 1)
+            {
+                if (Guided)
+                {
+                    yield return "sendtochaterror The color guide has already been activated!";
+                    yield break;
+                }
+                TheBestSquares[3].OnInteract();
+            }
+            yield break;
+        }
+        if (Regex.IsMatch(parameters[0], @"^\s*setsquare\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
+        {
+            yield return null;
+            if (Mocking[4].text.Equals("RESET"))
+            {
+                yield return "sendtochaterror Cannot perform the setsquare command while the module is resetting!";
+                yield break;
+            }
+            if (Layering == 0)
+            {
+                yield return "sendtochaterror Cannot perform the setsquare command while the module is viewing a square in colorblind mode!";
+                yield break;
+            }
+            if (parameters.Length == 3)
+            {
+                int temp = 0;
+                bool check = int.TryParse(parameters[1], out temp);
+                if (!check)
+                {
+                    yield return "sendtochaterror The specified square '" + parameters[1] + "' is invalid!";
+                    yield break;
+                }
+                else if (temp < 1 || temp > 10)
+                {
+                    yield return "sendtochaterror The specified square '" + parameters[1] + "' is not in the range 1-10!";
+                    yield break;
+                }
+                string color = "";
+                int index = -1;
+                if (parameters[2].Length >= 3)
+                {
+                    color = parameters[2].Substring(0, 1).ToUpper() + parameters[2].Substring(1).ToLower();
+                    if (!lognames.Contains(color))
+                    {
+                        yield return "sendtochaterror The specified color '" + parameters[2] + "' is invalid!";
+                        yield break;
+                    }
+                    else
+                    {
+                        index = Array.IndexOf(lognames, color);
+                    }
+                }
+                else
+                {
+                    if (parameters[2].Length == 1)
+                    {
+                        color = parameters[2].ToUpper();
+                    }
+                    else
+                    {
+                        color = parameters[2].Substring(0, 1).ToUpper() + parameters[2].Substring(1).ToLower();
+                    }
+                    if (!shortnames.Contains(color))
+                    {
+                        yield return "sendtochaterror The specified color '" + parameters[2] + "' is invalid!";
+                        yield break;
+                    }
+                    else
+                    {
+                        index = Array.IndexOf(shortnames, color);
+                    }
+                }
+                while ((Squaring + 1) != temp)
+                {
+                    TheBestSquares[0].OnInteract();
+                    yield return new WaitForSeconds(0.1f);
+                }
+                while (index != Corporeal[1][temp-1])
+                {
+                    TheBestSquares[1].OnInteract();
+                    yield return new WaitForSeconds(0.1f);
+                }
+            }
+            else if (parameters.Length > 3)
+            {
+                yield return "sendtochaterror Too many parameters!";
+            }
+            else if (parameters.Length == 2)
+            {
+                yield return "sendtochaterror Please specify the color you wish to set the square!";
+            }
+            else if (parameters.Length == 1)
+            {
+                yield return "sendtochaterror Please specify the square and color you wish to set!";
+            }
+            yield break;
+        }
+    }
+
+    IEnumerator TwitchHandleForcedSolve()
+    {
+        if (!Mocking[4].text.Equals("RESET") && !Mocking[4].text.Equals("NICE"))
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (Corporeal[1][i] != Answer[i])
+                {
+                    while (Squaring != i)
+                    {
+                        TheBestSquares[0].OnInteract();
+                        yield return new WaitForSeconds(0.1f);
+                    }
+                    while (Answer[i] != Corporeal[1][i])
+                    {
+                        TheBestSquares[1].OnInteract();
+                        yield return new WaitForSeconds(0.1f);
+                    }
+                }
+            }
+            TheBestSquares[4].OnInteract();
+        }
+        while (Mocking[4].text.Equals("RESET") || Mocking[4].text.Equals("NICE")) { yield return true; yield return new WaitForSeconds(0.1f); }
+    }
 }
