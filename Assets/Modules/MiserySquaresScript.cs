@@ -1213,18 +1213,7 @@ public class MiserySquaresScript : MonoBehaviour
 			Null = "North West";
 		}
 		
-		/**Debug.LogFormat(Answer[0].ToString());
-		Debug.LogFormat(Answer[1].ToString());
-		Debug.LogFormat(Answer[2].ToString());
-		Debug.LogFormat(Answer[3].ToString());
-		Debug.LogFormat(Answer[4].ToString());
-		Debug.LogFormat(Answer[5].ToString());
-		Debug.LogFormat(Answer[6].ToString());
-		Debug.LogFormat(Answer[7].ToString());
-		Debug.LogFormat(Answer[8].ToString());
-		Debug.LogFormat(Answer[9].ToString());*/
-		
-		Debug.LogFormat("[Misery Squares #{0}] The starting pixel of the sequence is in Column {1}, Row {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
+		Debug.LogFormat("[Misery Squares #{0}] The starting pixel of the sequence is in: Column {1}, Row {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
 		Debug.LogFormat("[Misery Squares #{0}] The movement of the sequence from the starting pixel is: {1}", moduleId, Null);
 
         string logans = "";
@@ -1232,14 +1221,14 @@ public class MiserySquaresScript : MonoBehaviour
         {
             if (i != 9)
             {
-                logans += lognames[Answer[i]]+" ";
+                logans += lognames[Answer[i]]+", ";
             }
             else
             {
                 logans += lognames[Answer[i]];
             }
         }
-        Debug.LogFormat("[Misery Squares #{0}] The correct continuation sequence of colors is {1}", moduleId, logans);
+        Debug.LogFormat("[Misery Squares #{0}] The correct continuation sequence of colors is: {1}", moduleId, logans);
     }
 	
 	void CheckDwelling()
@@ -1339,14 +1328,14 @@ public class MiserySquaresScript : MonoBehaviour
             {
                 if (i != 9)
                 {
-                    logans += lognames[Corporeal[1][i]] + " ";
+                    logans += lognames[Corporeal[1][i]] + ", ";
                 }
                 else
                 {
                     logans += lognames[Corporeal[1][i]];
                 }
             }
-            Debug.LogFormat("[Misery Squares #{0}] You submitted a color sequence of {1}", moduleId, logans);
+            Debug.LogFormat("[Misery Squares #{0}] You submitted: {1}", moduleId, logans);
             if (Corporeal[1][0] == Answer[0] && Corporeal[1][1] == Answer[1] && Corporeal[1][2] == Answer[2] && Corporeal[1][3] == Answer[3] && Corporeal[1][4] == Answer[4] && Corporeal[1][5] == Answer[5] && Corporeal[1][6] == Answer[6] && Corporeal[1][7] == Answer[7] && Corporeal[1][8] == Answer[8] && Corporeal[1][9] == Answer[9])
 			{
 				StartCoroutine(CorrectAnswer());
@@ -1675,21 +1664,29 @@ public class MiserySquaresScript : MonoBehaviour
         if (Regex.IsMatch(command, @"^\s*submit\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
         {
             yield return null;
-            if (Mocking[4].text.Equals("RESET"))
+            if (Mocking[4].text.Equals("RESET") || Mocking[4].text.Equals("NICE"))
             {
-                yield return "sendtochaterror Cannot submit while the module is resetting!";
+                yield return "sendtochaterror Cannot submit while the module is already submitting!";
                 yield break;
             }
             TheBestSquares[4].OnInteract();
+            if (Mocking[4].text.Equals("NICE"))
+            {
+                yield return "solve";
+            }
+            else
+            {
+                yield return "strike";
+            }
             yield break;
         }
         string[] parameters = command.Split(' ');
         if (Regex.IsMatch(parameters[0], @"^\s*colorblind\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
         {
             yield return null;
-            if (Mocking[4].text.Equals("RESET"))
+            if (Mocking[4].text.Equals("RESET") || Mocking[4].text.Equals("NICE"))
             {
-                yield return "sendtochaterror Cannot perform the colorblind command while the module is resetting!";
+                yield return "sendtochaterror Cannot perform the colorblind command while the module is submitting!";
                 yield break;
             }
             if (parameters.Length == 2)
@@ -1742,9 +1739,9 @@ public class MiserySquaresScript : MonoBehaviour
         if (Regex.IsMatch(parameters[0], @"^\s*setsquare\s*$", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
         {
             yield return null;
-            if (Mocking[4].text.Equals("RESET"))
+            if (Mocking[4].text.Equals("RESET") || Mocking[4].text.Equals("NICE"))
             {
-                yield return "sendtochaterror Cannot perform the setsquare command while the module is resetting!";
+                yield return "sendtochaterror Cannot perform the setsquare command while the module is submitting!";
                 yield break;
             }
             if (Layering == 0)
@@ -1839,12 +1836,12 @@ public class MiserySquaresScript : MonoBehaviour
                     while (Squaring != i)
                     {
                         TheBestSquares[0].OnInteract();
-                        yield return new WaitForSeconds(0.1f);
+                        yield return new WaitForSecondsRealtime(0.001f);
                     }
                     while (Answer[i] != Corporeal[1][i])
                     {
                         TheBestSquares[1].OnInteract();
-                        yield return new WaitForSeconds(0.1f);
+                        yield return new WaitForSecondsRealtime(0.001f);
                     }
                 }
             }
