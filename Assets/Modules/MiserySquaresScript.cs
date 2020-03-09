@@ -1062,6 +1062,7 @@ public class MiserySquaresScript : MonoBehaviour
 
 	void Start()
 	{
+		Debug.LogFormat("[Misery Squares #{0}] Remember that the top-left pixel has a coordinance of: Row 1, Column 1", moduleId);
 		CorporealLadder();
 		CheckDwelling();
 	}
@@ -1213,8 +1214,23 @@ public class MiserySquaresScript : MonoBehaviour
 			Null = "North West";
 		}
 		
-		Debug.LogFormat("[Misery Squares #{0}] The starting pixel of the sequence is in: Column {1}, Row {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
+		Debug.LogFormat("[Misery Squares #{0}] The starting pixel of the sequence is in: Row {1}, Column {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
 		Debug.LogFormat("[Misery Squares #{0}] The movement of the sequence from the starting pixel is: {1}", moduleId, Null);
+
+		string loginp = "";
+        for (int z = 0; z < 10; z++)
+        {
+            if (z != 9)
+            {
+                loginp += lognames[Corporeal[0][z]]+", ";
+            }
+            else
+            {
+                loginp += lognames[Corporeal[0][z]];
+            }
+        }
+        Debug.LogFormat("[Misery Squares #{0}] The initial sequence of colors is: {1}", moduleId, loginp);
+    
 
         string logans = "";
         for (int i = 0; i < 10; i++)
