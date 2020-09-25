@@ -1024,97 +1024,7 @@ public class MiserySquaresScript : MonoBehaviour
 		new int[1000] {31, 5, 45, 4, 44, 18, 5, 4, 29, 40, 3, 25, 3, 42, 30, 44, 11, 38, 1, 26, 31, 10, 23, 1, 7, 18, 23, 29, 41, 4, 1, 6, 10, 37, 15, 27, 21, 41, 1, 31, 0, 4, 12, 12, 15, 4, 9, 7, 6, 18, 25, 35, 11, 2, 4, 23, 10, 34, 30, 42, 14, 41, 31, 46, 32, 22, 39, 6, 1, 43, 45, 28, 43, 42, 10, 25, 1, 15, 13, 18, 9, 39, 30, 25, 23, 17, 25, 4, 37, 43, 0, 21, 4, 23, 43, 34, 10, 33, 3, 15, 27, 3, 5, 7, 38, 34, 11, 46, 47, 19, 10, 22, 4, 6, 44, 27, 4, 26, 19, 39, 14, 2, 21, 14, 37, 19, 46, 42, 33, 21, 2, 15, 31, 28, 43, 47, 14, 35, 9, 11, 7, 7, 15, 9, 18, 44, 6, 41, 7, 21, 4, 24, 11, 15, 14, 47, 32, 28, 21, 33, 15, 39, 32, 36, 42, 36, 13, 37, 26, 9, 2, 32, 45, 35, 34, 24, 19, 27, 42, 28, 10, 11, 11, 13, 40, 1, 38, 15, 4, 46, 13, 0, 25, 26, 1, 28, 22, 47, 16, 18, 46, 40, 19, 26, 8, 41, 47, 8, 43, 14, 8, 39, 14, 33, 47, 32, 5, 26, 3, 15, 32, 7, 47, 19, 20, 31, 27, 5, 46, 43, 7, 30, 11, 17, 21, 29, 29, 43, 10, 24, 9, 29, 45, 43, 26, 13, 33, 23, 8, 24, 6, 25, 7, 28, 40, 13, 39, 25, 42, 32, 41, 28, 40, 29, 44, 26, 21, 43, 3, 19, 8, 47, 35, 20, 3, 45, 26, 44, 7, 17, 45, 35, 23, 30, 30, 42, 19, 14, 21, 44, 37, 32, 44, 14, 40, 29, 19, 38, 4, 19, 11, 5, 25, 10, 37, 31, 11, 5, 44, 42, 5, 27, 5, 3, 29, 18, 40, 15, 8, 34, 0, 18, 15, 32, 16, 25, 15, 16, 26, 21, 0, 7, 11, 9, 17, 38, 25, 24, 39, 26, 16, 37, 3, 19, 34, 44, 41, 24, 1, 28, 2, 15, 29, 43, 36, 9, 13, 43, 19, 16, 7, 31, 44, 0, 4, 34, 21, 44, 40, 42, 29, 5, 39, 18, 9, 16, 17, 20, 40, 0, 33, 40, 29, 21, 20, 5, 1, 11, 4, 7, 28, 5, 47, 38, 6, 3, 2, 7, 36, 23, 15, 36, 15, 34, 23, 17, 43, 22, 39, 30, 15, 10, 3, 12, 11, 33, 23, 34, 22, 14, 41, 23, 30, 10, 20, 12, 19, 11, 34, 44, 24, 21, 12, 28, 36, 37, 10, 28, 0, 34, 37, 46, 16, 39, 4, 0, 24, 1, 6, 33, 10, 22, 18, 15, 13, 34, 27, 27, 31, 14, 9, 37, 9, 45, 41, 23, 8, 39, 40, 12, 29, 30, 10, 22, 10, 40, 36, 34, 40, 26, 40, 18, 22, 8, 35, 42, 4, 12, 40, 36, 0, 46, 43, 1, 43, 16, 28, 43, 31, 23, 45, 5, 1, 15, 19, 24, 32, 5, 23, 12, 7, 4, 33, 9, 6, 4, 26, 31, 0, 8, 10, 13, 42, 36, 18, 22, 33, 20, 29, 6, 8, 46, 25, 29, 29, 12, 26, 4, 9, 17, 19, 42, 47, 25, 1, 25, 13, 29, 24, 37, 13, 15, 45, 17, 34, 29, 22, 5, 5, 0, 22, 44, 41, 8, 27, 17, 1, 8, 46, 26, 42, 35, 27, 18, 23, 18, 2, 25, 31, 15, 30, 28, 39, 12, 38, 36, 41, 41, 40, 34, 34, 31, 35, 8, 32, 2, 40, 41, 9, 17, 42, 40, 4, 14, 19, 22, 19, 14, 17, 28, 23, 21, 25, 22, 20, 44, 1, 40, 19, 40, 41, 14, 28, 23, 41, 23, 27, 18, 45, 38, 30, 29, 19, 8, 38, 0, 43, 44, 23, 28, 35, 39, 21, 46, 18, 3, 19, 43, 25, 27, 29, 8, 38, 36, 19, 26, 41, 38, 40, 24, 38, 20, 12, 35, 4, 36, 8, 43, 6, 14, 6, 47, 45, 14, 18, 0, 29, 2, 30, 18, 47, 27, 44, 30, 29, 38, 30, 39, 43, 5, 8, 15, 26, 32, 22, 1, 3, 35, 20, 34, 23, 44, 2, 30, 35, 20, 18, 11, 38, 27, 44, 13, 14, 1, 34, 41, 22, 44, 9, 7, 19, 19, 0, 5, 22, 47, 35, 23, 6, 28, 6, 18, 42, 6, 2, 35, 37, 27, 0, 14, 3, 23, 5, 26, 8, 3, 14, 40, 31, 33, 41, 6, 23, 5, 42, 41, 15, 20, 25, 15, 11, 40, 11, 44, 42, 39, 16, 10, 11, 4, 47, 13, 37, 9, 8, 32, 29, 47, 1, 38, 46, 0, 1, 36, 40, 17, 35, 15, 17, 19, 34, 16, 41, 35, 36, 14, 22, 36, 4, 10, 12, 32, 10, 11, 7, 10, 17, 5, 37, 10, 33, 11, 18, 20, 2, 32, 37, 7, 45, 27, 12, 46, 31, 13, 14, 16, 46, 25, 42, 17, 3, 21, 6, 3, 20, 17, 8, 46, 11, 42, 4, 16, 37, 4, 36, 24, 18, 40, 36, 11, 14, 45, 36, 17, 13, 10, 37, 46, 31, 36, 21, 28, 16, 30, 45, 16, 45, 25, 17, 30, 30, 47, 47, 31, 26, 11, 12, 6, 8, 3, 40, 44, 46, 38, 23, 19, 10, 38, 3, 28, 8, 2, 14, 19, 28, 43, 27, 7, 31, 15, 5, 10, 8, 47, 33, 25, 0, 42, 23, 9, 41, 41, 10, 33, 40, 31, 30, 24, 20, 47, 42, 19, 29, 16, 1, 41, 28, 14, 28, 41, 33, 15, 18, 31, 5, 2, 36, 35, 29, 19, 33, 25, 34, 47, 46, 38, 46, 25, 37, 3, 46, 40, 30, 29, 21, 17, 39, 41, 2, 42, 41, 40, 6, 44, 45, 38, 40, 6, 4, 1, 24, 3, 44, 30, 38, 5, 29, 12, 28, 44, 32, 21, 0, 11, 35, 23, 3, 0, 34, 36, 43, 23, 17, 8, 10, 21, 22, 10, 47, 39}
 	};
 	
-	private int[][] DuplicateSequence = new int[100][]{
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	private int[][] DuplicateSequence = new int[10][]{
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -1128,21 +1038,20 @@ public class MiserySquaresScript : MonoBehaviour
 	};
 	
 	int ValidAnswer = 0;
-
 	string Null;
-	private int[] Core = {0, 0};
+	int[] Core = {0, 0};
 	
-	private int[][] Corporeal = new int[2][]{
+	int[][] Corporeal = new int[2][]{
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 		new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 	};
 
-    private string[] lognames = { "Black", "Red", "Green", "Blue", "Yellow", "Magenta", "Cyan", "White", "Orange", "Brown", "Gray", "Purple", "Indigo", "Teal", "Lime", "Opal", "Olive", "Moonstone", "Menthol", "Peru", "Phlox", "Pistachio", "Rackley", "Quincy", "Rust", "Sapphire", "Tulip", "Tomato", "Toolbox", "Water", "Wine", "Watermelon", "Zinnwaldite", "Iceberg", "Ultramarine", "Tan", "Shampoo", "Salem", "Ruby", "Pear", "Oxley", "Lanzones", "Kobi", "Garnet", "Azure", "Bisque", "Artichoke", "Amber" };
-    private string[] shortnames = { "Bl", "R", "G", "B", "Y", "M", "C", "W", "O", "Br", "Gr", "P", "I", "Te", "L", "Op", "Ol", "Mn", "Mt", "Pr", "Px", "Pt", "Ra", "Q", "Rt", "S", "Tu", "To", "Tb", "Wa", "Wi", "Wt", "Z", "Ic", "U", "Tn", "Sh", "Sa", "Ru", "Pe", "Ox", "Lz", "K", "Gn", "Az", "Bi", "Ar", "Am" };
-
-    private int Layering = 1;
-	private int Squaring = 0;
-	private bool Guided = false;
+    string[] lognames = { "Black", "Red", "Green", "Blue", "Yellow", "Magenta", "Cyan", "White", "Orange", "Brown", "Gray", "Purple", "Indigo", "Teal", "Lime", "Opal", "Olive", "Moonstone", "Menthol", "Peru", "Phlox", "Pistachio", "Rackley", "Quincy", "Rust", "Sapphire", "Tulip", "Tomato", "Toolbox", "Water", "Wine", "Watermelon", "Zinnwaldite", "Iceberg", "Ultramarine", "Tan", "Shampoo", "Salem", "Ruby", "Pear", "Oxley", "Lanzones", "Kobi", "Garnet", "Azure", "Bisque", "Artichoke", "Amber" };
+    string[] shortnames = { "Bl", "R", "G", "B", "Y", "M", "C", "W", "O", "Br", "Gr", "P", "I", "Te", "L", "Op", "Ol", "Mn", "Mt", "Pr", "Px", "Pt", "Ra", "Q", "Rt", "S", "Tu", "To", "Tb", "Wa", "Wi", "Wt", "Z", "Ic", "U", "Tn", "Sh", "Sa", "Ru", "Pe", "Ox", "Lz", "K", "Gn", "Az", "Bi", "Ar", "Am" };
+    int Layering = 1;
+	int Squaring = 0;
+	bool Guided = false;
+	Coroutine WinningFormula;
 	
 	//Logging
     static int moduleIdCounter = 1;
@@ -1173,230 +1082,166 @@ public class MiserySquaresScript : MonoBehaviour
 	void CorporealLadder()
 	{
 		Mocking[0].text = (Squaring + 1).ToString();
-		Core[0] = UnityEngine.Random.Range(0, 1000);
-		Core[1] = UnityEngine.Random.Range(0, 1000);
-		int Recoil = UnityEngine.Random.Range(0, 8);
-		int Fish = 0;
+		for (int x = 0; x < Core.Length; x++)
+		{
+			Core[x] = UnityEngine.Random.Range(0, 1000);
+		}
+		int Orientation = UnityEngine.Random.Range(0, 8);
 		for (int i = 0; i < 10; i++)
 		{
-			if (Recoil == 0)
+			switch (Orientation)
 			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] - Fish + 1000) % 1000][(Core[1] + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] - Fish + 1000) % 1000][(Core[1] + 1000) % 1000]];
+				case 0:
+					Corporeal[0][i] = TheCoordinance[(Core[0] - i + 1000) % 1000][(Core[1] + 1000) % 1000];
+					Null = "North";
+					break;
+				case 1:
+					Corporeal[0][i] = TheCoordinance[(Core[0] - i + 1000) % 1000][(Core[1] + i + 1000) % 1000];
+					Null = "North East";
+					break;
+				case 2:
+					Corporeal[0][i] = TheCoordinance[(Core[0] + 1000) % 1000][(Core[1] + i + 1000) % 1000];
+					Null = "East";
+					break;
+				case 3:
+					Corporeal[0][i] = TheCoordinance[(Core[0] + i + 1000) % 1000][(Core[1] + i + 1000) % 1000];
+					Null = "South East";
+					break;
+				case 4:
+					Corporeal[0][i] = TheCoordinance[(Core[0] + i + 1000) % 1000][(Core[1] + 1000) % 1000];
+					Null = "South";
+					break;
+				case 5:
+					Corporeal[0][i] = TheCoordinance[(Core[0] + i + 1000) % 1000][(Core[1] - i + 1000) % 1000];
+					Null = "South West";
+					break;
+				case 6:
+					Corporeal[0][i] = TheCoordinance[(Core[0] + 1000) % 1000][(Core[1] - i + 1000) % 1000];
+					Null = "West";
+					break;
+				case 7:
+					Corporeal[0][i] = TheCoordinance[(Core[0] - i + 1000) % 1000][(Core[1] - i + 1000) % 1000];
+					Null = "North West";
+					break;
+				default:
+					break;
 			}
-			
-			else if (Recoil == 1)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] - Fish + 1000) % 1000][(Core[1] + Fish + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] - Fish + 1000) % 1000][(Core[1] + Fish + 1000) % 1000]];
-			}
-			
-			else if (Recoil == 2)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] + 1000) % 1000][(Core[1] + Fish + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] + 1000) % 1000][(Core[1] + Fish + 1000) % 1000]];
-			}
-			
-			else if (Recoil == 3)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] + Fish + 1000) % 1000][(Core[1] + Fish + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] + Fish + 1000) % 1000][(Core[1] + Fish + 1000) % 1000]];
-			}
-			
-			else if (Recoil == 4)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] + Fish + 1000) % 1000][(Core[1] + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] + Fish + 1000) % 1000][(Core[1] + 1000) % 1000]];
-			}
-			
-			else if (Recoil == 5)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] + Fish + 1000) % 1000][(Core[1] - Fish + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] + Fish + 1000) % 1000][(Core[1] - Fish + 1000) % 1000]];
-			}
-			
-			else if (Recoil == 6)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] + 1000) % 1000][(Core[1] - Fish + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] + 1000) % 1000][(Core[1] - Fish + 1000) % 1000]];
-			}
-			
-			else if (Recoil == 7)
-			{
-				Corporeal[0][Fish] = TheCoordinance[(Core[0] - Fish + 1000) % 1000][(Core[1] - Fish + 1000) % 1000];
-				TheIndexOfSquares[Fish].material = TheIndexOfColors[TheCoordinance[(Core[0] - Fish + 1000) % 1000][(Core[1] - Fish + 1000) % 1000]];
-			}
-			
-			Fish++;
+			TheIndexOfSquares[i].material = TheIndexOfColors[Corporeal[0][i]];
 		}
 		
-		for (int m = 0; m < 1000; m++)
+		for (int a = 0; a < 1000; a++)
 		{
-			for (int n = 0; n < 1000; n++)
-			{	
-				for (int o = 0; o < 8; o++)
+			int BaselineNumber = 0;
+			int MaxPerLine = TheCoordinance[a].Count(x => x == Corporeal[0][0]);
+			for (int b = 0; b < 1000; b++)
+			{
+				if (BaselineNumber == MaxPerLine)
 				{
-					int [] AnswerDuplicate = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-					for (int p = 0; p < 10; p++)
+					break;
+				}
+				
+				if (TheCoordinance[a][b] != Corporeal[0][0])
+				{
+					continue;
+				}
+				
+				for (int c = 0; c < 8; c++)
+				{
+					int[] AnswerDuplicate = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+					for (int d = 0; d < 10; d++)
 					{
-						if (o == 0)
+						switch (c)
 						{
-							AnswerDuplicate[p] = TheCoordinance[(m - p + 1000) % 1000][(n + 1000) % 1000];
+							case 0:
+								AnswerDuplicate[d] = TheCoordinance[(a - d + 1000) % 1000][(b + 1000) % 1000];
+								break;
+							case 1:
+								AnswerDuplicate[d] = TheCoordinance[(a - d + 1000) % 1000][(b + d + 1000) % 1000];
+								break;
+							case 2:
+								AnswerDuplicate[d] = TheCoordinance[(a + 1000) % 1000][(b + d + 1000) % 1000];
+								break;
+							case 3:
+								AnswerDuplicate[d] = TheCoordinance[(a + d + 1000) % 1000][(b + d + 1000) % 1000];
+								break;
+							case 4:
+								AnswerDuplicate[d] = TheCoordinance[(a + d + 1000) % 1000][(b + 1000) % 1000];
+								break;
+							case 5:
+								AnswerDuplicate[d] = TheCoordinance[(a + d + 1000) % 1000][(b - d + 1000) % 1000];
+								break;
+							case 6:
+								AnswerDuplicate[d] = TheCoordinance[(a + 1000) % 1000][(b - d + 1000) % 1000];
+								break;
+							case 7:
+								AnswerDuplicate[d] = TheCoordinance[(a - d + 1000) % 1000][(b - d + 1000) % 1000];
+								break;
+							default:
+								break;
 						}
 						
-						else if (o == 1)
+						if (c == 0 && d == 0 && AnswerDuplicate[d] == Corporeal[0][0])
 						{
-							AnswerDuplicate[p] = TheCoordinance[(m - p + 1000) % 1000][(n + p + 1000) % 1000];
+							BaselineNumber++;
 						}
 						
-						else if (o == 2)
+						if (AnswerDuplicate[d] != Corporeal[0][d])
 						{
-							AnswerDuplicate[p] = TheCoordinance[(m + 1000) % 1000][(n + p + 1000) % 1000];
-						}
-						
-						else if (o == 3)
-						{
-							AnswerDuplicate[p] = TheCoordinance[(m + p + 1000) % 1000][(n + p + 1000) % 1000];
-						}
-						
-						else if (o == 4)
-						{
-							AnswerDuplicate[p] = TheCoordinance[(m + p + 1000) % 1000][(n + 1000) % 1000];
-						}
-						
-						else if (o == 5)
-						{
-							AnswerDuplicate[p] = TheCoordinance[(m + p + 1000) % 1000][(n - p + 1000) % 1000];
-						}
-						
-						else if (o == 6)
-						{
-							AnswerDuplicate[p] = TheCoordinance[(m + 1000) % 1000][(n - p + 1000) % 1000];
-						}
-						
-						else if (o == 7)
-						{
-							AnswerDuplicate[p] = TheCoordinance[(m - p + 1000) % 1000][(n - p + 1000) % 1000];
-						}
-					}
-					
-					bool ValidCheck = true;
-					for (int v = 0; v < 10; v++)
-					{
-						if (AnswerDuplicate[v] != Corporeal[0][v])
-						{
-							ValidCheck = false;
 							break;
 						}
 					}
 					
-					if (ValidCheck == true)
+					if (AnswerDuplicate.Count(x => x == -1) != 0)
 					{
-						for (int q = 0; q < 10; q++)
-						{
-							if (o == 0)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m - (10 + q) + 1000) % 1000][(n + 1000) % 1000];
-							}
-							
-							else if (o == 1)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m - (10 + q) + 1000) % 1000][(n + (10 + q) + 1000) % 1000];
-							}
-							
-							else if (o == 2)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m + 1000) % 1000][(n + (10 + q) + 1000) % 1000];
-							}
-							
-							else if (o == 3)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m + (10 + q) + 1000) % 1000][(n + (10 + q) + 1000) % 1000];
-							}
-							
-							else if (o == 4)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m + (10 + q) + 1000) % 1000][(n + 1000) % 1000];
-							}
-							
-							else if (o == 5)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m + (10 + q) + 1000) % 1000][(n - (10 + q) + 1000) % 1000];
-							}
-							
-							else if (o == 6)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m + 1000) % 1000][(n - (10 + q) + 1000) % 1000];
-							}
-							
-							else if (o == 7)
-							{
-								DuplicateSequence[ValidAnswer][q] = TheCoordinance[(m - (10 + q) + 1000) % 1000][(n - (10 + q) + 1000) % 1000];
-							}
-						}
-						ValidAnswer++;
+						continue;
 					}
+					
+					for (int e = 0; e < 10; e++)
+					{
+						switch (c)
+						{
+							case 0:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a - (10 + e) + 1000) % 1000][(b + 1000) % 1000];
+								break;
+							case 1:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a - (10 + e) + 1000) % 1000][(b + (10 + e) + 1000) % 1000];
+								break;
+							case 2:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a + 1000) % 1000][(b + (10 + e) + 1000) % 1000];
+								break;
+							case 3:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a + (10 + e) + 1000) % 1000][(b + (10 + e) + 1000) % 1000];
+								break;
+							case 4:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a + (10 + e) + 1000) % 1000][(b + 1000) % 1000];
+								break;
+							case 5:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a + (10 + e) + 1000) % 1000][(b - (10 + e) + 1000) % 1000];
+								break;
+							case 6:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a + 1000) % 1000][(b - (10 + e) + 1000) % 1000];
+								break;
+							case 7:
+								DuplicateSequence[ValidAnswer][e] = TheCoordinance[(a - (10 + e) + 1000) % 1000][(b - (10 + e) + 1000) % 1000];
+								break;
+							default:
+								break;
+						}
+					}
+					ValidAnswer++;
 				}
 			}
 		}
 		
-		if (Recoil == 0)
-		{
-			Null = "North";
-		}
-		
-		else if (Recoil == 1)
-		{
-			Null = "North East";
-		}
-		
-		else if (Recoil == 2)
-		{
-			Null = "East";
-		}
-		
-		else if (Recoil == 3)
-		{
-			Null = "South East";
-		}
-		
-		else if (Recoil == 4)
-		{
-			Null = "South";
-		}
-		
-		else if (Recoil == 5)
-		{
-			Null = "South West";
-		}
-		
-		else if (Recoil == 6)
-		{
-			Null = "West";
-		}
-		
-		else if (Recoil == 7)
-		{
-			Null = "North West";
-		}
-		
-		Debug.LogFormat("[Misery Squares #{0}] The starting pixel of the sequence is in: Row {1}, Column {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
-		Debug.LogFormat("[Misery Squares #{0}] The movement of the sequence from the starting pixel is: {1}", moduleId, Null);
+		Debug.LogFormat("[Misery Squares #{0}] The generated starting pixel of the sequence is in: Row {1}, Column {2}", moduleId, (Core[0] + 1).ToString(), (Core[1] + 1).ToString());
+		Debug.LogFormat("[Misery Squares #{0}] The generated movement of the sequence from the starting pixel is: {1}", moduleId, Null);
 
 		string loginp = "";
         for (int z = 0; z < 10; z++)
         {
-            if (z != 9)
-            {
-                loginp += lognames[Corporeal[0][z]]+", ";
-            }
-            else
-            {
-                loginp += lognames[Corporeal[0][z]];
-            }
+			loginp = z != 9 ? loginp + lognames[Corporeal[0][z]] + ", " : loginp + lognames[Corporeal[0][z]];
         }
         Debug.LogFormat("[Misery Squares #{0}] The initial sequence of colors is: {1}", moduleId, loginp);
-    
 		Debug.LogFormat("[Misery Squares #{0}] Amount of continuation sequence valid: {1}", moduleId, ValidAnswer);
 		
 		for (int a = 0; a < ValidAnswer; a++)
@@ -1404,16 +1249,9 @@ public class MiserySquaresScript : MonoBehaviour
 			string logans = "";
 			for (int i = 0; i < 10; i++)
 			{
-				if (i != 9)
-				{
-					logans += lognames[DuplicateSequence[a][i]]+", ";
-				}
-				else
-				{
-					logans += lognames[DuplicateSequence[a][i]];
-				}
+				logans = i != 9 ? logans + lognames[DuplicateSequence[a][i]] + ", " : logans + lognames[DuplicateSequence[a][i]];
 			}
-			Debug.LogFormat("[Misery Squares #{0}] The correct continuation sequence of colors is: {1}", moduleId, logans);
+			Debug.LogFormat("[Misery Squares #{0}] The correct sequence number {1} : {2}", moduleId, (a+1).ToString() ,logans);
 		}
     }
 	
@@ -1433,55 +1271,55 @@ public class MiserySquaresScript : MonoBehaviour
 			Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
 			Squaring = (Squaring + 1) % 10;
 			Mocking[0].text = (Squaring + 1).ToString();
-			if (Guided == true)
+			if (Guided)
 			{
-				Specks();
+				Mocking[3].text = shortnames[Corporeal[Layering][Squaring]];
 			}
 		}
 		
 		else if (index == 1)
 		{
-			if (Layering == 1)
+			switch (Layering)
 			{
-				Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
-				Corporeal[1][Squaring] = (Corporeal[1][Squaring] + 1) % 48;
-				CheckDwelling();
+				case 1:
+					Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
+					Corporeal[1][Squaring] = (Corporeal[1][Squaring] + 1) % 48;
+					CheckDwelling();
+					break;
+				default:
+					Audio.PlaySoundAtTransform(SFX[2].name, TheBestSquares[index].transform);
+					break;
 			}
 			
-			else
+			if (Guided)
 			{
-				Audio.PlaySoundAtTransform(SFX[2].name, TheBestSquares[index].transform);
-			}
-			
-			if (Guided == true)
-			{
-				Specks();
+				Mocking[3].text = shortnames[Corporeal[Layering][Squaring]];
 			}
 		}
 		
 		else if (index == 2)
 		{
-			if (Guided == true)
+			if (Guided)
 			{
 				Audio.PlaySoundAtTransform(SFX[1].name, TheBestSquares[index].transform);
 				Layering = (Layering + 1) % 2;
-				if (Layering == 0)
+				switch (Layering)
 				{
-					Mocking[2].text = "T";
-					Activity[3].SetActive(false);
-					Activity[4].SetActive(true);
+					case 0:
+						Mocking[2].text = "T";
+						Activity[3].SetActive(false);
+						Activity[4].SetActive(true);
+						break;
+					default:
+						Mocking[2].text = "B";
+						Activity[3].SetActive(true);
+						Activity[4].SetActive(false);
+						break;
 				}
 				
-				else
+				if (Guided)
 				{
-					Mocking[2].text = "B";
-					Activity[3].SetActive(true);
-					Activity[4].SetActive(false);
-				}
-				
-				if (Guided == true)
-				{
-					Specks();
+					Mocking[3].text = shortnames[Corporeal[Layering][Squaring]];
 				}
 			}
 			
@@ -1493,17 +1331,18 @@ public class MiserySquaresScript : MonoBehaviour
 		
 		if (index == 3)
 		{
-			if (Guided == false)
+			if (!Guided)
 			{
 				Audio.PlaySoundAtTransform(SFX[0].name, TheBestSquares[index].transform);
 				Mocking[1].text = "Enabled";
 				Mocking[1].color = Color.green;
-				Activity[0].SetActive(false);
-				Activity[1].SetActive(false);
-				Activity[2].SetActive(false);
+				for (int x = 0; x <= 2; x++)
+				{
+					Activity[x].SetActive(false);
+				}
 				Mocking[2].text = "B";
 				Guided = true;
-				Specks();
+				Mocking[3].text = shortnames[Corporeal[Layering][Squaring]];
 			}
 		}
 		
@@ -1512,18 +1351,11 @@ public class MiserySquaresScript : MonoBehaviour
             string logans = "";
             for (int i = 0; i < 10; i++)
             {
-                if (i != 9)
-                {
-                    logans += lognames[Corporeal[1][i]] + ", ";
-                }
-                else
-                {
-                    logans += lognames[Corporeal[1][i]];
-                }
+				logans = i != 9 ? logans + lognames[Corporeal[1][i]] + ", " : logans + lognames[Corporeal[1][i]];
             }
             Debug.LogFormat("[Misery Squares #{0}] You submitted: {1}", moduleId, logans);
 			
-			bool Wrong = true;
+			bool ValidBool = false;
 			for (int x = 0; x < ValidAnswer; x++)
 			{
 				bool Validity = true;
@@ -1538,266 +1370,13 @@ public class MiserySquaresScript : MonoBehaviour
 				
 				if (Validity == true)
 				{
-					Wrong = false;
+					ValidBool = true;
 					break;
 				}
 			}
 			
-			if (Wrong == false)
-			{
-				StartCoroutine(CorrectAnswer());
-			}
-			
-			if (Wrong == true)
-			{
-				StartCoroutine(WrongAnswer());
-			}
+			WinningFormula = ValidBool ? StartCoroutine(CorrectAnswer()) : StartCoroutine(WrongAnswer());
 		}	
-	}
-	
-	void Specks()
-	{
-
-		if (Corporeal[Layering][Squaring] == 0)
-		{
-			Mocking[3].text = "Bl";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 1)
-		{
-			Mocking[3].text = "R";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 2)
-		{
-			Mocking[3].text = "G";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 3)
-		{
-			Mocking[3].text = "B";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 4)
-		{
-			Mocking[3].text = "Y";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 5)
-		{
-			Mocking[3].text = "M";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 6)
-		{
-			Mocking[3].text = "C";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 7)
-		{
-			Mocking[3].text = "W";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 8)
-		{
-			Mocking[3].text = "O";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 9)
-		{
-			Mocking[3].text = "Br";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 10)
-		{
-			Mocking[3].text = "Gr";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 11)
-		{
-			Mocking[3].text = "P";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 12)
-		{
-			Mocking[3].text = "I";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 13)
-		{
-			Mocking[3].text = "Te";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 14)
-		{
-			Mocking[3].text = "L";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 15)
-		{
-			Mocking[3].text = "Op";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 16)
-		{
-			Mocking[3].text = "Ol";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 17)
-		{
-			Mocking[3].text = "Mn";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 18)
-		{
-			Mocking[3].text = "Mt";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 19)
-		{
-			Mocking[3].text = "Pr";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 20)
-		{
-			Mocking[3].text = "Px";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 21)
-		{
-			Mocking[3].text = "Pt";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 22)
-		{
-			Mocking[3].text = "Ra";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 23)
-		{
-			Mocking[3].text = "Q";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 24)
-		{
-			Mocking[3].text = "Rt";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 25)
-		{
-			Mocking[3].text = "S";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 26)
-		{
-			Mocking[3].text = "Tu";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 27)
-		{
-			Mocking[3].text = "To";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 28)
-		{
-			Mocking[3].text = "Tb";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 29)
-		{
-			Mocking[3].text = "Wa";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 30)
-		{
-			Mocking[3].text = "Wi";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 31)
-		{
-			Mocking[3].text = "Wt";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 32)
-		{
-			Mocking[3].text = "Z";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 33)
-		{
-			Mocking[3].text = "Ic";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 34)
-		{
-			Mocking[3].text = "U";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 35)
-		{
-			Mocking[3].text = "Tn";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 36)
-		{
-			Mocking[3].text = "Sh";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 37)
-		{
-			Mocking[3].text = "Sa";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 38)
-		{
-			Mocking[3].text = "Ru";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 39)
-		{
-			Mocking[3].text = "Pe";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 40)
-		{
-			Mocking[3].text = "Ox";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 41)
-		{
-			Mocking[3].text = "Lz";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 42)
-		{
-			Mocking[3].text = "K";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 43)
-		{
-			Mocking[3].text = "Gn";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 44)
-		{
-			Mocking[3].text = "Az";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 45)
-		{
-			Mocking[3].text = "Bi";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 46)
-		{
-			Mocking[3].text = "Ar";
-		}
-		
-		else if (Corporeal[Layering][Squaring] == 47)
-		{
-			Mocking[3].text = "Am";
-		}
-
 	}
 
 	IEnumerator CorrectAnswer()
@@ -1815,7 +1394,10 @@ public class MiserySquaresScript : MonoBehaviour
 				yield return new WaitForSecondsRealtime(0.47f);
 		}
 		Module.HandlePass();
-		Activity[15].SetActive(true); Activity[16].SetActive(true); Activity[17].SetActive(true); Activity[18].SetActive(true);
+		for (int x = 15; x <= 18; x++)
+		{
+			Activity[x].SetActive(true);
+		}
 		Mocking[6].text = "GG";
 		Debug.LogFormat("[Misery Squares #{0}] Correct sequence! You solved the module. Impressive!", moduleId);
 	}
@@ -1824,12 +1406,12 @@ public class MiserySquaresScript : MonoBehaviour
 	{
 		Debug.LogFormat("[Misery Squares #{0}] Incorrect sequence! Strike! Module resetting...", moduleId);
 		Mocking[4].text = "RESET";
-		for(int k = 0; k < 14; k++)
+		for (int k = 0; k < 14; k++)
 		{
             Activity[k].SetActive(false);
 		}
 		Audio.PlaySoundAtTransform(SFX[4].name, TheBestSquares[4].transform);
-		for(int q = 0; q < 11; q++)
+		for (int q = 0; q < 11; q++)
 		{
 			if (q < 10)
 			{
@@ -1839,18 +1421,19 @@ public class MiserySquaresScript : MonoBehaviour
 			yield return new WaitForSecondsRealtime(0.58f);
 		}
 		Module.HandleStrike();
-		for(int j = 0; j < 10; j++)
+		for (int j = 0; j < 10; j++)
 		{
 			Corporeal[1][j] = 0;
-		}
-		for(int v = 0; v < 10; v++)
-		{
-			BottomDwell[v].material = TheIndexOfColors[0];
+			BottomDwell[j].material = TheIndexOfColors[0];
 		}
 		Mocking[4].text = "SUBMIT";
-		Activity[0].SetActive(true); Activity[1].SetActive(true); Activity[2].SetActive(true); Activity[3].SetActive(true); Activity[5].SetActive(true); Activity[6].SetActive(true);
-		Activity[7].SetActive(true); Activity[8].SetActive(true); Activity[9].SetActive(true); Activity[10].SetActive(true); Activity[11].SetActive(true);
-		Activity[12].SetActive(true); Activity[13].SetActive(true);
+		for (int x = 0; x <= 13; x++)
+		{
+			if (x != 4)
+			{
+				Activity[x].SetActive(true);
+			}
+		}
 		Mocking[3].text = "";
 		Mocking[2].text = "";
 		Guided = false;
@@ -1859,7 +1442,7 @@ public class MiserySquaresScript : MonoBehaviour
 		Mocking[5].text = "Disabled";
 		Mocking[5].color = Color.red;
 		Mocking[0].text = "1";
-		for (int x = 0; x < 100; x++)
+		for (int x = 0; x < ValidAnswer; x++)
 		{
 			for (int n = 0; n < 10; n++)
 			{

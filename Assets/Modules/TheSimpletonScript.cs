@@ -13,7 +13,7 @@ public class TheSimpletonScript : MonoBehaviour
 	public KMBombInfo Info;
 	
 	public TextMesh Victory;
-	public AudioClip SFX;
+	public AudioClip SFX, SFX2;
 	
 	public KMSelectable Button;
 	private int Once = 0;
@@ -51,7 +51,7 @@ public class TheSimpletonScript : MonoBehaviour
 		if (Once == 1)
 		{
 			Debug.LogFormat("[The Simpleton #{0}] You pushed the button. Good job!", moduleId);
-			Audio.PlaySoundAtTransform(SFX.name, transform);
+			Audio.PlaySoundAtTransform(UnityEngine.Random.Range(0, 20) == 0 ? SFX2.name : SFX.name, transform);
 			Victory.text = "VICTORY";
 			Module.HandlePass();
 			Once = 2;

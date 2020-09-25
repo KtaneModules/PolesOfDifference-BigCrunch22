@@ -480,6 +480,7 @@ MonoBehaviour:
   Info: {fileID: 114817933349874938}
   Victory: {fileID: 102631878811610652}
   SFX: {fileID: 8300000, guid: 18f37e2c972b6964881e9f7bfae547ed, type: 3}
+  SFX2: {fileID: 8300000, guid: 25e022f73c982e44e819e514f4940b93, type: 3}
   Button: {fileID: 114024698222798552}
 --- !u!114 &114144072769370054
 MonoBehaviour:
